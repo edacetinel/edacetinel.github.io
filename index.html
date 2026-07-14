@@ -233,3 +233,231 @@
   .project-tags{ display:flex; gap:8px; flex-wrap:wrap; }
   .tag{
     font-family:var(--font-mono);
+    font-size:11px;
+    color:var(--accent-amber);
+    background:rgba(242,184,75,0.08);
+    padding:4px 10px;
+    border-radius:20px;
+  }
+
+  @media (max-width:640px){
+    .project-row{ flex-direction:column; align-items:flex-start; gap:12px; }
+  }
+
+  .timeline-item{
+    display:grid;
+    grid-template-columns:140px 1fr;
+    gap:24px;
+    padding:24px 0;
+    border-bottom:1px solid var(--border);
+  }
+  .timeline-item:last-child{ border-bottom:none; }
+  .timeline-date{ font-family:var(--font-mono); font-size:13px; color:var(--text-muted); }
+  .timeline-item h3{ font-family:var(--font-display); font-size:17px; font-weight:600; margin-bottom:6px; }
+  .timeline-item p{ color:var(--text-muted); font-size:14px; }
+
+  .contact-panel{
+    background:var(--bg-panel);
+    border:1px solid var(--border);
+    border-radius:10px;
+    padding:56px;
+    text-align:center;
+  }
+  .contact-panel h2{ font-family:var(--font-display); font-size:30px; margin-bottom:16px; }
+  .contact-panel p{ color:var(--text-muted); margin-bottom:32px; }
+  .contact-links{ display:flex; justify-content:center; gap:16px; flex-wrap:wrap; }
+
+  footer{
+    text-align:center;
+    padding:40px 0;
+    font-family:var(--font-mono);
+    font-size:12px;
+    color:var(--text-muted);
+  }
+</style>
+</head>
+<body>
+
+<header>
+  <nav class="wrap">
+    <div class="logo">ec<span>.dev</span></div>
+    <ul>
+      <li><a href="#about">About</a></li>
+      <li><a href="#skills">Skills</a></li>
+      <li><a href="#projects">Projects</a></li>
+      <li><a href="#education">Education</a></li>
+      <li><a href="#contact">Contact</a></li>
+    </ul>
+  </nav>
+</header>
+
+<main>
+  <section class="hero" style="border-top:none; padding-top:80px;">
+    <div class="wrap">
+      <div class="hero-eyebrow">Computer Engineering Student</div>
+
+      <h1>Eda Gül Çetinel</h1>
+
+      <p class="lead">
+        Computer Engineering student at Yeditepe University, building a strong technical
+        foundation in software, AI, and systems, and continuously growing my skills
+        across engineering, product thinking, and business analysis.
+      </p>
+
+      <div class="hero-actions">
+        <a href="cv.pdf" class="btn btn-primary" download>↓ Download CV</a>
+        <a href="#projects" class="btn btn-ghost">View Projects</a>
+        <a href="https://github.com/edacetinel" target="_blank" class="btn btn-ghost">GitHub →</a>
+      </div>
+
+      <div class="status-panel">
+        <div class="status-bar">
+          <span class="status-dot r"></span><span class="status-dot y"></span><span class="status-dot g"></span>
+          <span style="margin-left:8px;">profile.status</span>
+        </div>
+        <div class="status-grid">
+          <div class="status-cell">
+            <div class="status-label">Field</div>
+            <div class="status-value blue">Computer Engineering</div>
+          </div>
+          <div class="status-cell">
+            <div class="status-label">Interest</div>
+            <div class="status-value amber">AI & Product Management</div>
+          </div>
+          <div class="status-cell">
+            <div class="status-label">Status</div>
+            <div class="status-value">Yeditepe University</div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="about">
+    <div class="wrap">
+      <div class="section-head">
+        <span class="section-tag">01</span>
+        <h2>About</h2>
+      </div>
+      <div class="about-grid">
+        <div>
+          <p>
+            I'm a <strong>Computer Engineering</strong> student at Yeditepe University.
+            Alongside writing software, I'm drawn to the layer above it — how technical
+            decisions turn into products, and how teams plan, prioritize, and ship. I see
+            engineering not just as a skill, but as the foundation for understanding what
+            I'll eventually help manage.
+          </p>
+          <p>
+            My academic projects range from systems-level programming to full-stack
+            web development and team-based backend engineering. I'm aiming for roles
+            in <strong>product or project management</strong> — and, as a strong alternative,
+            <strong>business analysis</strong> — while staying close to software, AI, and
+            hardware rather than stepping away from the technical side entirely.
+          </p>
+        </div>
+        <div>
+          <div class="focus-list">
+            <div class="focus-item">Software Development</div>
+            <div class="focus-item">Artificial Intelligence</div>
+            <div class="focus-item">Product & Project Management</div>
+            <div class="focus-item">Business Analysis</div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="skills">
+    <div class="wrap">
+      <div class="section-head">
+        <span class="section-tag">02</span>
+        <h2>Skills</h2>
+      </div>
+      <div class="skills-grid">
+        <div class="skill-card">
+          <h3>Languages</h3>
+          <ul>
+            <li>Python</li>
+            <li>Java</li>
+            <li>C / C++</li>
+            <li>SQL</li>
+            <li>PHP</li>
+          </ul>
+        </div>
+        <div class="skill-card">
+          <h3>Tools & Frameworks</h3>
+          <ul>
+            <li>Git / GitHub</li>
+            <li>FastAPI</li>
+            <li>MySQL</li>
+            <li>VS Code</li>
+          </ul>
+        </div>
+        <div class="skill-card">
+          <h3>Product & Management</h3>
+          <ul>
+            <li>Product/Project Planning</li>
+            <li>System Design (UML)</li>
+            <li>Stakeholder Communication</li>
+            <li>Reporting & Presentation</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="projects">
+    <div class="wrap">
+      <div class="section-head">
+        <span class="section-tag">03</span>
+        <h2>Projects</h2>
+      </div>
+      <div class="contact-panel">
+        <h2>All my projects live on GitHub</h2>
+        <p>From systems programming to full-stack apps and team projects — take a look at the code itself.</p>
+        <div class="contact-links">
+          <a href="https://github.com/edacetinel" target="_blank" class="btn btn-primary">Visit my GitHub →</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="education">
+    <div class="wrap">
+      <div class="section-head">
+        <span class="section-tag">04</span>
+        <h2>Education</h2>
+      </div>
+
+      <div class="timeline-item">
+        <div class="timeline-date">2022 — Present</div>
+        <div>
+          <h3>B.Sc. Computer Engineering</h3>
+          <p>Yeditepe University</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="contact">
+    <div class="wrap">
+      <div class="contact-panel">
+        <h2>Get in touch</h2>
+        <p>You can reach me directly by email, or find me on LinkedIn and GitHub.</p>
+        <div class="contact-links">
+          <a href="mailto:edaacetinel@gmail.com" class="btn btn-primary">Send Email</a>
+          <a href="https://www.linkedin.com/in/eda-çetinel-0652972a4" target="_blank" class="btn btn-ghost">LinkedIn</a>
+          <a href="https://github.com/edacetinel" target="_blank" class="btn btn-ghost">GitHub</a>
+        </div>
+      </div>
+    </div>
+  </section>
+</main>
+
+<footer>
+  <div class="wrap">© 2026 Eda Gül Çetinel — built with plain HTML/CSS, no framework needed.</div>
+</footer>
+
+</body>
+</html>
